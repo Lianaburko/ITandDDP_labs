@@ -1,0 +1,48 @@
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.centered-button {
+    background-color: #af1515;
+    color: white;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+}
+  
+body {
+    color: white;
+    background-color: #333333;
+}
+
+header {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    font-size: 10px;
+}
+
+.fact-text {
+  position: absolute;
+  bottom: 150px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
