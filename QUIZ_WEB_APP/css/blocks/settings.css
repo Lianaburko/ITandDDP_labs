@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #333333;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin: 1rem;
+    font-style: bold;
+}
+
+p {
+    font-style: italic;
+    color: black;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+#questions-value {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #d29797;
+}
+
+.category {
+    background-color: #f7f7f7;
+    color: #6b1111;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.modes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #d29797;
+}
+
+.mode {
+    background-color: #f7f7f7;
+    color: #6b1111;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.category.active {
+    background-color: #6b1111;
+    color: #f7f7f7;
+}
+
+section {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #6b1111;
+    margin: 10px;
+}
+
+section.active  {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #6b1111;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #f7f7f7;
+    margin: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+}
+
+.button-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button, a.button{
+    display: inline-block;
+    background-color: #6b1111;
+    min-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #af1515; /* задаем толщину и цвет обводки */
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+    text-decoration: none; /* чтобы убрать подчеркивание при наведении */
+}
+
+.button:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+.button-container > *+*{
+    margin-left: 8rem;
+}

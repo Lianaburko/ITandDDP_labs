@@ -18,6 +18,7 @@
 
 .header-nav{
     align-items: center;
+    color: white;
 }
 
 .header-login{
@@ -28,6 +29,7 @@
 .header-login > *+*{
     margin-left: 35px;
 }
+
 .header-login a{
     color: white;
     text-decoration: none;

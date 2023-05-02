@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Выбор категорий </title>
+    <!-- Resets -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/blocks/settings.css">
+    <link rel="stylesheet" href="./css/blocks/header.css">
+
+    <script src="settings_script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-logo" onclick="window.location.href='index.html'"><img src="./img/logo.png" alt="logo" style="max-width: 100%;" ></div>  
+                <div class="header-nav"> КАТЕГОРИИ </div>     
+                <div class="header-nav"> Что наша жизнь? Игра! </div>        
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-group">
+                <label for="questions">Выберите количество вопросов:</label>
+                <input type="range" name="questions" id="questions" min="5" max="15" list="question-list" value="5">
+                <datalist id="question-list">
+                    <option value="5">5 вопросов</option>
+                    <option value="6">6 вопросов</option>
+                    <option value="7">7 вопросов</option>
+                    <option value="8">8 вопросов</option>
+                    <option value="9">9 вопросов</option>
+                    <option value="10">10 вопросов</option>
+                    <option value="11">11 вопросов</option>
+                    <option value="12">12 вопросов</option>
+                    <option value="13">13 вопросов</option>
+                    <option value="14">14 вопросов</option>
+                    <option value="15">15 вопросов</option>
+                </datalist>
+                <span id="questions-value">5 вопросов</span>
+                <script src="settings_script.js"></script>
+            </div>
+                <div class="categories">
+                    <section class="category" onclick="changeColorCategory(this)">
+                        <h2>Музыка</h2>
+                        <p> Новое турне Курта Кобейна </p>
+                    </section>
+                    <section class="category" onclick="changeColorCategory(this)">
+                        <h2>Литература</h2>
+                        <p> Татьяна Лаурина и не только </p>
+                    </section>
+                    <section class="category" onclick="changeColorCategory(this)">
+                        <h2>Математика</h2>
+                        <p> Площадь пастбища или загона? </p>
+                    </section>
+                    <section class="category" onclick="changeColorCategory(this)">
+                        <h2>Искусство</h2>
+                        <p> Сова с дуолинго доп*****ась </p>
+                    </section>
+                    <section class="category" onclick="changeColorCategory(this)">
+                        <h2>Кино</h2>
+                        <p> Жизнь - русские бл***, а ты в ней - режиссер </p>
+                    </section>
+                    <section class="category" onclick="changeColorCategory(this)">
+                        <h2>13 сектор</h2>
+                        <p> Мой дед по-пьяни сп*****ул</p>
+                    </section>
+                </div>  
+                <div class="modes">
+                    <section class="mode" onclick="changeColorMode(this)">
+                        <h2>True/False</h2>
+                        <p> Веришь или не веришь? </p>
+                    </section>
+                    <section class="mode" onclick="changeColorMode(this)">
+                        <h2> QUIZ </h2>
+                        <p> Самый умный? </p>
+                    </section>
+                    <section class="mode" onclick="changeColorMode(this)">
+                        <h2> Bigger/smaller </h2>
+                        <p> Тиндер для умных </p>
+                    </section>
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="window.location.href='rules.html'"> Назад </button> 
+                    <button class="button" onclick="window.location.href='game_quiz.html'"> Стартуем! </button>
+                </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <h1> &copy; 2023 Лиана Бурко Liampa QUIZ  "Сегодня я пос**л также легко и непринужденно, как и регистрация на винлайн" &copy; Денис Казанский</h1>
+        </div>   
+    
+    </footer>
+</body>
+</html>
