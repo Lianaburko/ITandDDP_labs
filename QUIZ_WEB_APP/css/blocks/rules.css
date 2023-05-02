@@ -1,18 +1,32 @@
-.container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f1f1f1;
-}
+.container-1 {
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    position: relative;
+    background-color: #430303;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 150px;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    border: 2px solid #af1515; /* задаем толщину и цвет обводки */
+}  
 
-.rules-block {
-	background-color: white;
-	padding: 50px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	text-align: center;
+.block{
+    width: 600px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
 }
 
 h2 {
@@ -24,13 +38,37 @@ ol {
 	font-size: 20px;
 	line-height: 30px;
 	margin: 0;
-	padding: 0;
+	padding: 10%;
 }
 
-.block{
-    height: 100%;
-    background-color: rgba(255,255,255,0.2);
-    box-shadow: 0 5px 45px rgba(0,0,0,0.2);
+.button-container{
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.button, a.button{
+    display: inline-block;
+    background-color: #530707;
+    min-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #af1515; /* задаем толщину и цвет обводки */
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+    text-decoration: none; /* чтобы убрать подчеркивание при наведении */
+}
+
+.button:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+.button-container > *+*{
+    margin-left: 8rem;
 }
