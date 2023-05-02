@@ -1,0 +1,63 @@
+.header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #af1515;
+    background-color: black;
+}
+
+.header-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    max-width: 15%; 
+    height: auto;
+}
+
+.header-nav{
+    align-items: center;
+}
+
+.header-login{
+    display: flex;
+    align-items: center;
+
+}
+.header-login > *+*{
+    margin-left: 35px;
+}
+.header-login a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.header-login a:hover{
+    color: #af1515;
+    transition: color 0.2s ease;
+}
+
+
+.button, a.button{
+    display: inline-block;
+    background-color: #af1515;
+    min-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #af1515; /* задаем толщину и цвет обводки */
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+    text-decoration: none; /* чтобы убрать подчеркивание при наведении */
+}
+
+.button:hover{
+    opacity: 0.8;
+    color: white;
+}

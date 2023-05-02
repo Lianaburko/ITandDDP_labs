@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <!-- Resets -->
+     <link rel="stylesheet" href="./css/reset.css">
+     <!-- Fonts -->
+     <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
+     <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
+     <!-- Blocks -->
+     <link rel="stylesheet" href="./css/blocks/header.css">
+     <link rel="stylesheet" href="./css/blocks/register.css">
+     <!-- ????? -->
+     <link rel="icon" href="./img/im1.png" type="image/png" sizes="32x32">
+     <script src="register_script.js" defer></script>
+     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+     <script src="register_form.js"></script>
+</head>
+
+
+<body>
+    <article class="container"> 
+        <div class="block">
+            <section class="block__item block-item">
+                <h2 class="block-item__title"> У вас есть аккаунт? </h2>
+                <bottom class="block-item__btn signin-btn">Войти</bottom>
+            </section>
+            <section class="block__item block-item">
+                <h2 class="block-item__title">У вас нет аккаунта?</h2>
+                <bottom class="block-item__btn signup-btn">Зарегестрироваться</bottom>
+            </section>
+        </div>
+        <div class="form-box">
+            <form action="#" class="form form_signin">
+                <h3 class="form__title"> Вход </h3>
+                <p><input type="text" class="form__input" id="email" placeholder="Email"></p>
+                <p><input type="password" class="form__input" id="pass" placeholder="Пароль"></p>
+                <p> <button class="form__btn"  onclick="signIn()"> Войти </button>   </p>
+                <p> <a href="" class="form__forgot"> Восстановление пароля </a> </p>
+            </form>
+
+            <form action="#" class="form form_signup">
+                <h3 class="form__title"> Регистрация </h3>
+                <p><input type="text" class="form__input" id="login" placeholder="Логин"></p>
+                <p><input type="email" class="form__input"  id="email1" placeholder="Email"></p>
+                <p><input type="password" class="form__input" id="pass1" placeholder="Пароль" ></p>
+                <p><input type="password" class="form__input" id="pass2" placeholder="Подтвердите пароль"></p>
+                <p> <button class="form__btn form__btn_signup" onclick="signUp()"> Зарегистрироваться </button>   </p>
+            
+            </form>
+        </div>
+    </article>
+</body>
+</html>
