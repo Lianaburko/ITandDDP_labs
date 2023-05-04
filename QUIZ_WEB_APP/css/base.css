@@ -21,6 +21,7 @@
 }
   
 .centered-button {
+    position: absolute;
     background-color: #af1515;
     color: white;
     border-radius: 50%;
@@ -45,7 +46,7 @@ body {
     font-size: 20px;
 }
 
-footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;

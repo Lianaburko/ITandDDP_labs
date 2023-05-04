@@ -67,7 +67,8 @@ input[type="range"] {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    background-color: #d29797;
+    background-color: #5c5252;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .category {
@@ -83,7 +84,8 @@ input[type="range"] {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    background-color: #d29797;
+    background-color: #5c5252;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .mode {
@@ -91,6 +93,7 @@ input[type="range"] {
     color: #6b1111;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
   
 .category.active {

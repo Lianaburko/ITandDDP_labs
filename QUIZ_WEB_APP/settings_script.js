@@ -21,7 +21,7 @@ function changeColorCategory(category) {
   }
 
 
-  const questionsInput = document.getElementById("questions");
+  const questionsInput = document.querySelector("#questions")
   const questionsValue = document.getElementById("questions-value");
   
   questionsInput.addEventListener("input", () => {
